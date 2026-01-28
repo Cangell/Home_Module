@@ -132,13 +132,28 @@
         }
 
         /* PAGE LINKS CONTAINER */
-        .page-links {
+       /* .page-links {
             background: rgba(34, 33, 33, 0.9);
             display: flex;
             height: 152px;
             width: 100%;
 			backdrop-filter: blur(20px);
-        }
+        }*/
+
+		.page-links {
+		    background: rgba(34, 33, 33, 0.9);
+		    display: flex;
+		    align-items: stretch;
+		    height: 152px;
+		    width: 100%;
+		    max-width: 1730px;
+		    min-width: 992px;
+		    
+		    /* Reset list styles */
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;
+		}
 
         /* MARGIN SECTIONS - fixed 32px width, no gradient */
         .link-section.margin {
@@ -245,14 +260,14 @@
             </div>
 
             <!-- PAGE LINKS -->
-            <div class="page-links">
+            <ul class="page-links">
                 <!-- Left Margin - fixed 32px -->
                 <div class="link-section margin">
                     <div class="link-content"></div>
                 </div>
 
                 <!-- Link 1 -->
-                <div class="link-section">
+                <li class="link-section">
                     <div class="link-content">
                         <p class="link-text">Students & Professionals</p>
                         <div class="arrow-line-container">
@@ -262,10 +277,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
 
                 <!-- Link 2 -->
-                <div class="link-section">
+                <li class="link-section">
                     <div class="link-content">
                         <p class="link-text">Businesses & Enterprises</p>
                         <div class="arrow-line-container">
@@ -275,10 +290,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
 
                 <!-- Link 3 -->
-                <div class="link-section">
+                <li class="link-section">
                     <div class="link-content">
                         <p class="link-text">Universities & Educators</p>
                         <div class="arrow-line-container">
@@ -288,10 +303,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
 
                 <!-- Link 4 -->
-                <div class="link-section">
+                <li class="link-section">
                     <div class="link-content">
                         <p class="link-text">Families & Friends</p>
                         <div class="arrow-line-container">
@@ -301,10 +316,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
 
                 <!-- Link 5 -->
-                <div class="link-section">
+                <li class="link-section">
                     <div class="link-content">
                         <p class="link-text">Students & Professionals</p>
                         <div class="arrow-line-container">
@@ -314,10 +329,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
 
                 <!-- Link 6 -->
-                <div class="link-section">
+                <li class="link-section">
                     <div class="link-content">
                         <p class="link-text">Students & Professionals</p>
                         <div class="arrow-line-container">
@@ -327,13 +342,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
 
                 <!-- Right Margin - fixed 32px -->
-                <div class="link-section margin">
+                <li class="link-section margin">
                     <div class="link-content"></div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
